@@ -1,0 +1,13 @@
+PACKAGES AND CLASS DESCRIPTION:
+main.ScrapingComponents.Ingredients:  this class contains reusable components
+scrapesoups.ClientSoup.ClientSoup: this class contains actual code for soups
+scrapesoups.LinkExtract.LinkExtract: This class is for extracting links
+scrapesoups.DataExtract.DataExtract: This class is for extracting data form links
+
+Ingredients:
+__init__(self,_driver) - constructor takes the driver parameter
+scrollPageDown(self) - scrolls down a web page till the end
+getOutputFilesPath() - returns the path of the output folder for cancatinating with filename for writing outputs
+writeToFileWithSeperators(filename,list[]) - used to write ouput data with seperators. field seperator - '|^|', link seperator - '|!|' 
+writeToFile(filename,url) - write a single link to file
+writeListToFile(filename,urls[]) - write a list to file with '\n'
